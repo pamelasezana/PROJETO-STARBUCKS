@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css"/>
+    <script src="https://kit.fontawesome.com/4dfb7627f9.js" crossorigin="anonymous"></script>
     <title>starbucks</title>
 </head>
 <body>
@@ -26,13 +27,32 @@
                        <button class="loupe-header-search">
                            <img src="../assets/images/loupe.png">
                        </button>
+                      
                    </form>
+                   <aside>
+                      
+                    <div id="menu-opener" onclick="menuToggle()">
+                        <i class="fas fa-bars" style="font-size:32px;color:#117050; margin-right:40px;margin-top:42px;cursor: pointer;"></i>
+                     
+                  </div>
+                  <div id="menu-area" style="background-color:#117050;font-weight: 600;">
+                      <ul style="font-family: Proxima Nova">
+                     
+                          <li>
+                              Home
+                          </li>
+                          <li>About</li>
+                          <li>Contact</li>
+                      </ul>
+                    </div>
+                   
+                </aside>
+                 
                </div>
-               <div class="header-menu">
-                    <img src="../assets/images/menu.png">
-               </div>
+             
             </div>
         </div>
+       
 
     </header>
 
@@ -129,4 +149,17 @@
     </footer>
   
 </body>
+
+
+    <script>
+    function menuToggle() {
+        let menuArea = document.getElementById("menu-area");
+    if(menuArea.classList.contains('menu-opened') == true) {
+        menuArea.classList.remove('menu-opened');
+    } else {
+        menuArea.classList.add('menu-opened');
+}
+}
+</script>
+
 </html>

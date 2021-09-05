@@ -345,6 +345,9 @@ footer{
                 margin-bottom: 11px;
        
     }
+    
+   
+    
    
     
 }
@@ -433,5 +436,48 @@ footer{
         height: 300px;
        
     }
+   
 
+}
+
+
+aside{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;
+}
+#menu-opender{
+    width:45px;
+        height:45px;
+        cursor:pointer;
+        margin-top:10px;
+        margin-right:10px;
+}
+#menu-area{
+    width:0;
+    height:100vh;
+    background:#ccc;
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#fff;
+    cursor:pointer;
+}
+#menu-area li:hover {
+    background:#fff;
+    color:#117050;
+   
+}
+.menu-opened{
+    width: 350px !important;
 }
